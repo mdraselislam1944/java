@@ -1,0 +1,13 @@
+package op;
+public class B1 {
+    String city;
+    String district;
+    String country;
+    B1(String city,String district,String country)
+    {
+        this.city=city;
+        this.district=district;
+        this.country=country;
+    }
+    
+}
