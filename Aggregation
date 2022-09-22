@@ -1,0 +1,31 @@
+package op;
+public class A1 {
+    int id;
+    String name;
+    B1 address;
+    public static void main(String[] args)
+    {
+        
+    }
+    A1(int id,String name,B1 address)
+    {
+        this.id=id;
+        this.name=name;
+        this.address=address;
+    }
+    void display()
+    {
+        System.out.println(id+" "+name);
+        System.out.println(address.city+" "+address.district+" "+address.country);
+    }
+    public static void main()
+    {
+        B1 ob1=new B1("panchagarh","dhaka","bangladesh");
+          B1 ob2=new B1("panchagarh 2","dhaka","bangladesh");
+          A1 ob=new A1(5,"rasel",ob1);
+            A1 obb=new A1(6,"rahul",ob2);
+            ob.display();
+            obb.display();
+    }
+    
+}
